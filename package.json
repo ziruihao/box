@@ -6,6 +6,11 @@
     "layout",
     "flex"
   ],
+  "homepage": "https://github.com/ziruihao/simple-box",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ziruihao/simple-box"
+  },
   "main": "simple-box",
   "dependencies": {
     "react": "^16.13.1"
