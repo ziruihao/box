@@ -6,10 +6,10 @@
     "layout",
     "flex"
   ],
-  "homepage": "https://github.com/ziruihao/simple-box",
+  "homepage": "https://github.com/ziruihao/box",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ziruihao/simple-box"
+    "url": "https://github.com/ziruihao/box"
   },
   "main": "@zirayhao/box",
   "dependencies": {
