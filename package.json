@@ -1,5 +1,5 @@
 {
-  "name": "simple-box",
+  "name": "@zirayhao/box",
   "version": "1.0.0",
   "description": "Simpliefied flex layouts.",
   "keywords": [
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/ziruihao/simple-box"
   },
-  "main": "simple-box",
+  "main": "@zirayhao/box",
   "dependencies": {
     "react": "^16.13.1"
   }
