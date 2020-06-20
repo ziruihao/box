@@ -1,0 +1,13 @@
+{
+  "name": "simple-box",
+  "version": "1.0.0",
+  "description": "Simpliefied flex layouts.",
+  "keywords": [
+    "layout",
+    "flex"
+  ],
+  "main": "simple-box",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
