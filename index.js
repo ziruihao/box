@@ -51,7 +51,9 @@ var Box = /*#__PURE__*/function (_React$Component) {
   _createClass(Box, [{
     key: "render",
     value: function render() {
-      var style = {};
+      var style = {
+        display: 'flex'
+      };
 
       if (this.props.style) {
         style = _objectSpread({}, this.props.style);
