@@ -11,8 +11,21 @@
     "type": "git",
     "url": "https://github.com/ziruihao/box"
   },
-  "main": "@zirayhao/box",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-file index.js"
+  },
   "dependencies": {
-    "react": "^16.13.1"
+    "@babel/cli": "^7.10.3"
   }
 }
