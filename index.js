@@ -42,10 +42,10 @@ var Box = /*#__PURE__*/function (_React$Component) {
 
   var _super = _createSuper(Box);
 
-  function Box() {
+  function Box(props) {
     _classCallCheck(this, Box);
 
-    return _super.apply(this, arguments);
+    return _super.call(this, props);
   }
 
   _createClass(Box, [{

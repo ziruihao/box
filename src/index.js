@@ -1,6 +1,9 @@
 import React from 'react';
 
 export default class Box extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     let style = {};
     if (props.style) {
