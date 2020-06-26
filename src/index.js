@@ -12,7 +12,7 @@ export default class Box extends React.Component {
     if (this.props.row) {
       style.flexDirection = 'row';
     } else if (this.props.col) {
-      style.flexDirection = 'col';
+      style.flexDirection = 'column';
     }
     if (this.props.justify) {
       switch (this.props.justify) {
