@@ -6,16 +6,16 @@ export default class Box extends React.Component {
   }
   render() {
     let style = {};
-    if (props.style) {
-      style = { ...props.style };
+    if (this.props.style) {
+      style = { ...this.props.style };
     }
-    if (props.row) {
+    if (this.props.row) {
       style.flexDirection = 'row';
-    } else if (props.col) {
+    } else if (this.props.col) {
       style.flexDirection = 'col';
     }
-    if (props.justify) {
-      switch (props.justify) {
+    if (this.props.justify) {
+      switch (this.props.justify) {
         case 'start':
           style.justifyContent = 'flex-start';
           break;
@@ -33,8 +33,8 @@ export default class Box extends React.Component {
           break;
       }
     }
-    if (props.align) {
-      switch (props.align) {
+    if (this.props.align) {
+      switch (this.props.align) {
         case 'start':
           style.alignItems = 'flex-start';
           break;
@@ -49,8 +49,8 @@ export default class Box extends React.Component {
           break;
       }
     }
-    if (props.self) {
-      switch (props.self) {
+    if (this.props.self) {
+      switch (this.props.self) {
         case 'start':
           style.alignSelf = 'flex-start';
           break;
@@ -65,36 +65,36 @@ export default class Box extends React.Component {
           break;
       }
     }
-    if (props.wrap) {
+    if (this.props.wrap) {
       style.flexWrap = 'wrap';
     }
-    if (props.flex) style.flex = props.flex;
-    if (props.width) style.width = props.width;
-    if (props.height) style.height = props.height;
-    if (props.pad) {
-      if (Array.isArray(props.pad)) {
-        switch (props.pad.length) {
+    if (this.props.flex) style.flex = this.props.flex;
+    if (this.props.width) style.width = this.props.width;
+    if (this.props.height) style.height = this.props.height;
+    if (this.props.pad) {
+      if (Array.isArray(this.props.pad)) {
+        switch (this.props.pad.length) {
           case 1:
-            style.padding = props.pad[0];
+            style.padding = this.props.pad[0];
             break;
           case 2:
-            style.paddingVertical = props.pad[0];
-            style.paddingHorizontal = props.pad[1];
+            style.paddingVertical = this.props.pad[0];
+            style.paddingHorizontal = this.props.pad[1];
             break;
           case 4:
-            style.paddingTop = props.pad[0];
-            style.paddingBottom = props.pad[1];
-            style.paddingLeft = props.pad[2];
-            style.paddingRight = props.pad[3];
+            style.paddingTop = this.props.pad[0];
+            style.paddingBottom = this.props.pad[1];
+            style.paddingLeft = this.props.pad[2];
+            style.paddingRight = this.props.pad[3];
             break;
         }
       } else {
-        style.padding = props.pad;
+        style.padding = this.props.pad;
       }
     }
     return (
-      <div id={props.id ? props.id : null} className={props.className ? props.className : null} style={style}>
-        {props.children}
+      <div id={this.props.id ? this.props.id : null} className={this.props.className ? this.props.className : null} style={style}>
+        {this.props.children}
       </div>
     );
   };
