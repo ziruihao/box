@@ -5,7 +5,7 @@ export default class Box extends React.Component {
     super(props);
   }
   render() {
-    let style = {};
+    let style = { display: 'flex' };
     if (this.props.style) {
       style = { ...this.props.style };
     }
