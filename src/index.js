@@ -69,8 +69,14 @@ export default class Box extends React.Component {
       style.flexWrap = 'wrap';
     }
     if (this.props.flex) style.flex = this.props.flex;
-    if (this.props.width) style.width = this.props.width;
-    if (this.props.height) style.height = this.props.height;
+    if (this.props.width) {
+      style.width = this.props.width
+      style.minWidth = this.props.width
+    };
+    if (this.props.height) {
+      style.height = this.props.height;
+      style.minHeight = this.props.height;
+    }
     if (this.props.pad) {
       if (Array.isArray(this.props.pad)) {
         switch (this.props.pad.length) {
